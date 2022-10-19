@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #161623;
+}
+
+
+.background{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(./index.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+   
+}
+
+
+.cabeçalho-link{
+    display: flex;
+    gap: 3rem;
+    font-weight: 300;
+    cursor: pointer;  
+}
+
+.cabeçalho-link a{
+    color: #fff;
+    font-size: 12px;
+}
+
+.cabeçalho-link a:hover{
+    color:  #2ecc71;
+    transition: 0.3s all;
+}
+
+.logo i{
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: 1px solid #2ecc71;
+    color: #2ecc71;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+
+
+
+.container-text{
+    padding: 150px 0 0 130px;
+}
+
+
+@media screen and (max-width:1200px) {
+    .cont {
+        margin-left: -20%;
+    }
+    body{
+        overflow: scroll;
+        
+    }
+    .background{
+        height: 180vh;
+    }
+    
+}
+
+
+
+/* Cards */
+
+
+
+.container {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+   
+    
+}
+
+.container{
+    display: inline-block;
+}
+
+
+.content .img{
+    margin-top: 50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+}
+
+.content h3{
+    text-decoration: underline;
+    color: rgb(182, 180, 180);
+}
+
+.container .p{
+    top: 50px;
+}
+
+
+.container .card {
+    
+    position: relative;
+    color: #fff;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    top: 40px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.712);
+    border-radius: 15px;
+    background: #ffffff13;
+}
+
+.container .card .content{
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .card:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+}
